@@ -3,6 +3,7 @@ from typing import Dict, Mapping, Any, List
 from ..constants import ORGANISM_KEY, TAX_DIST_KEY, TAX_RANKS, TAX_RANKS_CLOSE_TO_BROAD
 from .normalize import normalize_species_name
 
+
 def annotate_graph_with_taxonomy(G: nx.Graph, taxonomy_cache: Dict[str, Mapping[str, Any]]) -> None:
     """
     Annotate the graph nodes with taxonomic lineage information from the taxonomy cache.

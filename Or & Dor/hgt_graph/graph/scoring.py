@@ -3,6 +3,7 @@ import networkx as nx
 from typing import Dict, Set, Tuple, List, Iterable
 from ..constants import HGT_TAX_DISTANCE_MIN, EDGE_WEIGHT_KEY, TAX_DIST_KEY, HGT_MIN_WEIGHT, TOP_HGT_N, MIN_SUS_EDGES, TOP_N_EDGES
 
+
 def compute_hgt_scores(G: nx.Graph, min_tax_distance: int = HGT_TAX_DISTANCE_MIN,
                        min_weight: float = HGT_MIN_WEIGHT) -> Tuple[Dict[str, float],
                                                                     Dict[str, int],

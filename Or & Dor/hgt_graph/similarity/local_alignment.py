@@ -1,6 +1,7 @@
 from typing import Tuple
 from Bio.Align import PairwiseAligner
 
+
 def local_alignment_metrics(aligner: PairwiseAligner, seq1: str, seq2: str) -> Tuple[float, float, int]:
     """
     Perform local alignment between two sequences and calculate identity, coverage, and aligned length.

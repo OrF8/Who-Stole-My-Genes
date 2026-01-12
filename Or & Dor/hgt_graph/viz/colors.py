@@ -2,6 +2,7 @@ import hashlib
 import random
 from ..constants import COLOR_BOUNDS
 
+
 def stable_color_from_string(s: str) -> str:
     """
     Generate a stable color hex code from a given string.

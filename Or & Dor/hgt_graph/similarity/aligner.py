@@ -1,6 +1,7 @@
 from Bio.Align import PairwiseAligner
 from ..constants import BLOSUM62, GAP_EXTEND_PENALTY, GAP_OPEN_PENALTY
 
+
 def make_aligner() -> PairwiseAligner:
     """
     Create and configure a PairwiseAligner for local sequence alignment using BLOSUM62 matrix.

@@ -2,6 +2,7 @@ import pandas as pd
 from typing import Dict, Union
 from ..constants import PROTEIN_ID_KEY, SEQUENCE_KEY, ORGANISM_KEY, PROTEIN_NAME_KEY, SEQ_LENGTH_KEY
 
+
 def create_node_attributes(df: pd.DataFrame) -> Dict[str, Dict[str, Union[str, int]]]:
     """
     Create a dictionary of node attributes from the given DataFrame.

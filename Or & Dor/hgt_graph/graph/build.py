@@ -1,6 +1,7 @@
 import networkx as nx
 from typing import Dict, List, Tuple, Union
 
+
 def build_nx_graph(node_attrs: Dict[str, Dict[str, Union[str, int]]],
                    edges: List[Tuple[str, str, Dict[str, float]]]) -> nx.Graph:
     """

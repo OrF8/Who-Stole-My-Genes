@@ -6,6 +6,10 @@ RESULTS_DIR: str = os.path.join('.', 'results')
 if not os.path.exists(RESULTS_DIR):
     os.makedirs(RESULTS_DIR)
 OUT_PATH_FMT: str = os.path.join(RESULTS_DIR, 'protein_similarity_graph_{}.html')
+PHYLO_DIR: str = os.path.join(RESULTS_DIR, 'phylogenetic_trees')
+if not os.path.exists(PHYLO_DIR):
+    os.makedirs(PHYLO_DIR)
+PHYLO_OUT_PATH_FMT: str = os.path.join(PHYLO_DIR, '{}_phylo_tree.png')
 DATA_DIR: str = os.path.join('.', 'data')
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
@@ -32,8 +36,8 @@ SUS_NODE_BORDER_COLOR: str = 'rgba(255,0,0,1.0)'
 REG_NODE_BORDER_COLOR: str = 'rgba(30,30,30,0.6)'
 GAP_OPEN_PENALTY: int = -10
 GAP_EXTEND_PENALTY: int = -1
-DEFAULT_MIN_ID: float = 0.4
-DEFAULT_MIN_COVERAGE: float = 0.7
+DEFAULT_MIN_ID: float = 0.5
+DEFAULT_MIN_COVERAGE: float = 0.8
 MIN_ALIGNED_LENGTH: int = 50
 TAX_RANKS: List[str] = ['superkingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 TAX_RANKS_CLOSE_TO_BROAD = ['species', 'genus', 'family', 'order', 'class', 'phylum', 'superkingdom']
@@ -46,3 +50,5 @@ COLOR_BOUNDS: Tuple[int, int] = (30, 220)
 PLOTLY_MIN_W: float = 1.0
 PLOTLY_MAX_W: float = 10.0
 NCBI_SLEEP: float = 0.34
+PHYLO_TITLE: str = 'HGT Candidate Phylogenetic Tree'
+PHYLO_REG_FONT_SIZE: int = 18

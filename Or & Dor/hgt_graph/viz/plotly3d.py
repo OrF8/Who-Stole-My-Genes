@@ -11,6 +11,7 @@ from .colors import stable_color_from_string, rescale_weight
 
 PathLike = Union[str, Path]
 
+
 def build_edge_traces(G: nx.Graph, pos: Dict[str, Tuple[float, float, float]],
                       suspicious_edges: Set[Tuple[str, str]], show_edge_hover: bool = True) -> List[go.Scatter3d]:
     """

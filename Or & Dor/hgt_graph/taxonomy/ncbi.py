@@ -5,6 +5,7 @@ from ..constants import ENTREZ_EMAIL, ENTREZ_TOOL
 Entrez.email = ENTREZ_EMAIL
 Entrez.tool = ENTREZ_TOOL
 
+
 def species_to_tax_id(species_name: str) -> Optional[str]:
     """
     Given a species name, return its taxonomic ID using NCBI Entrez.
