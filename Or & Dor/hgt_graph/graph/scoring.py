@@ -24,6 +24,9 @@ def compute_hgt_scores(G: nx.Graph, min_tax_distance: int = HGT_TAX_DISTANCE_MIN
 
     for u, v, edata in G.edges(data=True):
         w = float(edata.get(EDGE_WEIGHT_KEY, 0.0))
+        # In our implementation, higher tax distance indicates more distant taxa
+        # so if the distance is greater than or equal to the threshold, we consider it suspicious.
+        # Because of that, if the tax distance is missing, we treat it as -1 to avoid false positives.
         d = int(edata.get(TAX_DIST_KEY, -1))
 
         if w >= min_weight and d >= min_tax_distance:

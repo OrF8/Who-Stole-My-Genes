@@ -10,10 +10,14 @@ def create_node_attributes(df: pd.DataFrame) -> Dict[str, Dict[str, Union[str, i
     :return: A dictionary where keys are node IDs and values are tuples of (seq_len, organism, name).
     """
     node_attributes = {}
+    unknown_counter: int = 1
     for _, row in df.iterrows():
         node_id = row[PROTEIN_ID_KEY]
         seq_len = len(row[SEQUENCE_KEY])
         organism = row[ORGANISM_KEY]
+        if pd.isna(organism) or organism.strip() == "":
+            organism = f"Unknown {unknown_counter}"
+            unknown_counter += 1
         name = row[PROTEIN_NAME_KEY]
         node_attributes[node_id] = {
             SEQ_LENGTH_KEY: seq_len,

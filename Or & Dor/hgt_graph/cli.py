@@ -1,11 +1,12 @@
 import pandas as pd
 import argparse
 from pathlib import Path
-from typing import Set, Tuple, Dict, List
+from typing import Set, Tuple
 from .constants import (OUT_PATH_FMT, TAX_SAVE_PATH_FMT, HGT_TAX_DISTANCE_MIN,
                         HGT_MIN_WEIGHT, TOP_HGT_N, ORGANISM_KEY, PHYLO_OUT_PATH_FMT)
 from .io.proteins import create_node_attributes, extract_seqs
 from .graph.build import build_nx_graph
+from .graph.build import build_identity_map_from_edges
 from .similarity.edges import build_edges_from_alignments
 from .taxonomy.cache import get_or_build_taxonomy_cache
 from .taxonomy.normalize import normalize_species_name, add_name_idx
@@ -13,19 +14,6 @@ from .taxonomy.annotate import annotate_graph_with_taxonomy, annotate_edges_with
 from .graph.scoring import compute_hgt_scores, percentile, top_hgt_candidates, top_hgt_edges
 from .viz.plotly3d import export_plotly_3d
 from .viz.phylo import export_nj_tree
-
-
-def build_identity_map_from_edges(edges: List[Tuple[str, str, Dict[str, float]]]) -> Dict[Tuple[str, str], float]:
-    """
-    Build a pairwise identity map from graph edges.
-    :param edges: The edges of the graph with attributes.
-    :return: A dictionary mapping (node1, node2) to their identity score.
-    """
-    ident_map: Dict[Tuple[str, str], float] = {}
-    for u, v, attrs in edges:
-        if 'identity' in attrs:
-            ident_map[(u, v)] = float(attrs['identity'])
-    return ident_map
 
 
 def main() -> None:
