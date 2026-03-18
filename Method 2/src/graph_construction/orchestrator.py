@@ -8,12 +8,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from graph_construction.fasta_parsing import load_manifest_species_map
-from graph_construction.graph_pruning import (
+from fasta_parsing import load_manifest_species_map
+from graph_pruning import (
     keep_q_percentile_edges,
     keep_top_X_edges_per_node,
 )
-from graph_construction.kmer_candidates_from_faa import (
+from kmer_candidates_from_faa import (
     build_kmer_index,
     generate_candidates,
     load_proteins_from_downloads,

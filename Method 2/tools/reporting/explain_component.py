@@ -20,11 +20,10 @@ from __future__ import annotations
 
 import argparse
 import csv
-import math
-from collections import Counter, defaultdict
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 
 
 def parse_float(x: str) -> Optional[float]:

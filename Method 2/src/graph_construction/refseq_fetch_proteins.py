@@ -32,19 +32,15 @@ Notes:
 
 import argparse
 import csv
-import gzip
 import re
 import sys
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterator, List, Optional, Set, Tuple
+from typing import Dict, Iterator, List, Optional, Set
 import urllib.request
 
-try:
-    from graph_construction.fasta_parsing import iter_fasta_gz, protein_id_from_header
-except ImportError:
-    from fasta_parsing import iter_fasta_gz, protein_id_from_header
+from fasta_parsing import iter_fasta_gz, protein_id_from_header
 
 
 def assembly_dirname_from_ftp_path(ftp_path: str) -> str:

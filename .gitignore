@@ -1,0 +1,9 @@
+/LaTeX/*.aux
+/LaTeX/*.bbl
+/LaTeX/*.blg
+/LaTeX/*.log
+/LaTeX/*.xml
+/LaTeX/*.gz
+/LaTeX/*.toc
+
+/.venv
