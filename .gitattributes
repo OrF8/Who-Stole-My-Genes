@@ -1,0 +1,2 @@
+Method[[:space:]]1/MMSeqs2[[:space:]]Files/*.fasta filter=lfs diff=lfs merge=lfs -text
+Method[[:space:]]1/MMSeqs2[[:space:]]Files/*.csv filter=lfs diff=lfs merge=lfs -text

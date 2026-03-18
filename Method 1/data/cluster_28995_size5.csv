@@ -1,0 +1,6 @@
+protein_id,protein_name,organism,sequence,cluster_id
+NP_250836.1,hypothetical protein PA2146,Pseudomonas aeruginosa PAO1,MAQHQGGKGNFAEDPKRASEAGKKGGQASGGNFKNDPQRASEAGKKGGQRSHGGN,28995
+NP_309682.1,hypothetical protein ECs_1655,Escherichia coli O157:H7 str. Sakai,MTEHRGGAGNFAEDRQKASDAGRKGGQHSGGNFKNDPQRASEAGKKGGQNSHGGGRKSDS,28995
+NP_415525.2,stress-induced bacterial acidophilic repeat motifs-containing protein YmdF,Escherichia coli str. K-12 substr. MG1655,MANHRGGSGNFAEDRERASEAGKKGGQHSGGNFKNDPQRASEAGKKGGKSSHGKSDN,28995
+NP_460093.1,putative cytoplasmic protein,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,MANHRGGSGNFAEDRERASEAGRKGGQHSGGNFKNDPQRASEAGKKGGKSSNRNS,28995
+YP_005227107.1,general stress protein,,MAEHRGGSGNFAEDREKASEAGRKGGQHSGGNFKNDPERASEAGKKGGKNSHGGGRKSGDS,28995

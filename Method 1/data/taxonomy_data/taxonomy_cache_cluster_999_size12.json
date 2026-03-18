@@ -1,0 +1,95 @@
+{
+    "Bacillus subtilis": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Bacillati",
+        "phylum": "Bacillota",
+        "class": "Bacilli",
+        "order": "Bacillales",
+        "family": "Bacillaceae",
+        "genus": "Bacillus",
+        "species group": "Bacillus subtilis group",
+        "species": "Bacillus subtilis"
+    },
+    "Escherichia coli": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Pseudomonadati",
+        "phylum": "Pseudomonadota",
+        "class": "Gammaproteobacteria",
+        "order": "Enterobacterales",
+        "family": "Enterobacteriaceae",
+        "genus": "Escherichia",
+        "species": "Escherichia coli"
+    },
+    "Klebsiella pneumoniae": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Pseudomonadati",
+        "phylum": "Pseudomonadota",
+        "class": "Gammaproteobacteria",
+        "order": "Enterobacterales",
+        "family": "Enterobacteriaceae",
+        "no rank": "Klebsiella/Raoultella group",
+        "genus": "Klebsiella",
+        "species group": "Klebsiella pneumoniae complex",
+        "species": "Klebsiella pneumoniae"
+    },
+    "Mycobacterium tuberculosis": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Bacillati",
+        "phylum": "Actinomycetota",
+        "class": "Actinomycetes",
+        "order": "Mycobacteriales",
+        "family": "Mycobacteriaceae",
+        "genus": "Mycobacterium",
+        "species group": "Mycobacterium tuberculosis complex",
+        "species": "Mycobacterium tuberculosis"
+    },
+    "Pseudomonas aeruginosa": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Pseudomonadati",
+        "phylum": "Pseudomonadota",
+        "class": "Gammaproteobacteria",
+        "order": "Pseudomonadales",
+        "family": "Pseudomonadaceae",
+        "genus": "Pseudomonas",
+        "species group": "Pseudomonas aeruginosa group",
+        "species": "Pseudomonas aeruginosa"
+    },
+    "Salmonella enterica": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Pseudomonadati",
+        "phylum": "Pseudomonadota",
+        "class": "Gammaproteobacteria",
+        "order": "Enterobacterales",
+        "family": "Enterobacteriaceae",
+        "genus": "Salmonella",
+        "species": "Salmonella enterica"
+    },
+    "Shigella flexneri": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Pseudomonadati",
+        "phylum": "Pseudomonadota",
+        "class": "Gammaproteobacteria",
+        "order": "Enterobacterales",
+        "family": "Enterobacteriaceae",
+        "genus": "Shigella",
+        "species": "Shigella flexneri"
+    },
+    "Staphylococcus aureus": {
+        "cellular root": "cellular organisms",
+        "domain": "Bacteria",
+        "kingdom": "Bacillati",
+        "phylum": "Bacillota",
+        "class": "Bacilli",
+        "order": "Bacillales",
+        "family": "Staphylococcaceae",
+        "genus": "Staphylococcus",
+        "species": "Staphylococcus aureus"
+    }
+}
