@@ -10,7 +10,7 @@ This project was created by [**Or Forshmit**](https://github.com/OrF8), [**Noam 
 as part of the course [**76558 – Algorithms in Computational Biology**](https://shnaton.huji.ac.il/index.php/NewSyl/76558/1/2026/)  
 at the Hebrew University of Jerusalem ([**HUJI**](https://en.huji.ac.il/)).
 
-Full paper available in [`LaTeX/`](LaTeX/Who%20Stole%20My%20Genes%20-%20Detecting%20HGT%20Candidates%20Using%20Graph-Based%20Analysis.pdf).
+Full paper available [here](LaTeX/Who%20Stole%20My%20Genes%20-%20Detecting%20HGT%20Candidates%20Using%20Graph-Based%20Analysis.pdf).
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/OrF8/CBIO-Hackathon-HGT?style=default&logo=python&color=3776AB" alt="top-language">
