@@ -28,7 +28,6 @@ jobs:
           from pathlib import Path
 
           data = json.loads(Path("languages.json").read_text())
-
           total = sum(data.values())
           python_bytes = data.get("Python", 0)
           pct = 0 if total == 0 else round((python_bytes / total) * 100, 1)
@@ -41,9 +40,7 @@ jobs:
           }
 
           Path("badges").mkdir(exist_ok=True)
-          Path("badges/python-percentage.json").write_text(
-              json.dumps(badge, indent=2)
-          )
+          Path("badges/python-percentage.json").write_text(json.dumps(badge, indent=2))
           PY
 
           rm -f languages.json
@@ -58,17 +55,9 @@ jobs:
           title: "Update Python percentage badge"
           body: "Automated update of badges/python-percentage.json"
 
-      - name: Auto-approve pull request
-        if: steps.cpr.outputs.pull-request-number != ''
-        uses: hmarr/auto-approve-action@v4
-        with:
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Enable auto-merge
         if: steps.cpr.outputs.pull-request-number != ''
         run: |
-            gh pr merge ${{ steps.cpr.outputs.pull-request-number }} \
-              --merge --auto --delete-branch
+          gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --merge --auto --delete-branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
