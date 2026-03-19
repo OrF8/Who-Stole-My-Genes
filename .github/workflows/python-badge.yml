@@ -2,8 +2,37 @@ name: Update Python Badge
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 6 * * *"
+  
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.py'
+      - '**/*.ipynb'
+      - '**/*.r'
+      - '**/*.R'
+      - '**/*.jl'
+      - '**/*.c'
+      - '**/*.h'
+      - '**/*.cpp'
+      - '**/*.hpp'
+      - '**/*.cc'
+      - '**/*.cxx'
+      - '**/*.java'
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '**/*.go'
+      - '**/*.rs'
+      - '**/*.php'
+      - '**/*.swift'
+      - '**/*.kt'
+      - '**/*.scala'
+      - '**/*.m'
+      - '**/*.mm'
+      - '**/*.cs'
+      - '**/*.sh'
+      - '**/*.sql'
 
 permissions:
   contents: write
