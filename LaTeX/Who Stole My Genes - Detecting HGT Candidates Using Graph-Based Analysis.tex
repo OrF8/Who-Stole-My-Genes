@@ -241,7 +241,7 @@
 	\begin{center}
 		$\text{SimilarityScore}(u,v) = \text{Identity}(u,v) \times \text{Coverage}(u,v).$
 	\end{center}
-	For a cluster of $n$ proteins, this requires $O(n^2)$ pairwise alignments; since $n \ll N_{\text{total}}$ (where $N_{\text{total}}$ is the total number of proteins in the dataset) after clustering, this is feasible. For pseudo-code, see \cref{algo1}.
+	For a cluster of $n$ proteins, this requires $O(n^2)$ pairwise alignments; since $n \ll N_{\text{total}}$ (where $N_{\text{total}}$ is the total number of proteins) after clustering, this is feasible. For pseudo-code, see \cref{algo1}.
 	\begin{algorithm}
 		\caption{BuildEdgesFromAlignments}
 		\begin{algorithmic}[1]
