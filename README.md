@@ -101,6 +101,7 @@ Protein FASTAs (15 bacterial proteomes)
 
 ### Method 2 — Alignment-Free k-mer Pipeline
 
+This method scales to 48 species (19 taxonomical families) without pairwise alignment, relying instead on *k*-mer composition statistics and graph-level anomaly detection.
 This method treats proteins as nodes in a cross-species similarity graph, then scores proteins and components for HGT-like behavior using graph structure and species-pair-normalized edge surprise — no pairwise alignment required.
 
 The pipeline has two parts:
