@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as follows."
 title: "Who Stole My Genes? Detecting HGT Candidates Using Graph-Based Analysis"
 type: software
-repository-code: https://github.com/OrF8/your-repo-name
+repository-code: https://github.com/noam-kimhi/Who-Stole-My-Genes
 authors:
   - family-names: Forshmit
     given-names: Or
