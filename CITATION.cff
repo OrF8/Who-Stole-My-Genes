@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as follows."
 title: "Who Stole My Genes? Detecting HGT Candidates Using Graph-Based Analysis"
 type: software
+repository-code: https://github.com/OrF8/your-repo-name
 authors:
   - family-names: Forshmit
     given-names: Or
@@ -30,4 +31,4 @@ keywords:
   - computational biology
   - graph analysis
   - protein similarity
-license: "GPL-3.0"
+license: "GPL-3.0-or-later"
