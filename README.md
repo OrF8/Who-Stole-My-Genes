@@ -260,8 +260,12 @@ For automated reporting after the pipeline run, see `tools/REPRODUCE.md` and the
 
 ##### Full E2E Recipe (From Scratch)
 
-**Step 1 — Prepare `assembly_summary_refseq.txt`** (if not present — ~216 MB):
+**Step 1 — Prepare `assembly_summary_refseq.txt`** (tracked via Git LFS — ~216 MB; the repo contains only an LFS pointer, so even if the file appears present you must fetch the actual object or download it manually):
 ```sh
+# Option A: fetch the LFS object (requires git-lfs installed and LFS access)
+git lfs pull --include="Method 2/data/assembly_summary_refseq.txt"
+
+# Option B: download directly from NCBI
 curl -L -o data/assembly_summary_refseq.txt \
     https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt
 ```
