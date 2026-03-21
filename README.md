@@ -217,7 +217,7 @@ git clone https://github.com/noam-kimhi/Who-Stole-My-Genes
 
 2. Navigate to the project directory:
 ```sh
-cd CBIO-Hackathon-HGT
+cd Who-Stole-My-Genes
 ```
 
 3. Install Python dependencies:
